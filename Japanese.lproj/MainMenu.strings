@@ -1,0 +1,37 @@
+"About FloatingStat" = "FloatingStat について";
+"Preferences..." = "環境設定...";
+"Quit FloatingStat" = "FloatingStat を終了";
+
+"General" = "一般";
+"Show status menu on menu bar" = "メニューバーにステータスメニューを表示";
+"Window position" = "ウインドウの位置";
+"Top-Left" = "左上";
+"Top-Right" = "右上";
+"Bottom-Left" = "左下";
+"Bottom-Right" = "右下";
+"Text" = "テキスト";
+"Background" = "背景";
+
+"Auto Hide" = "自動的に隠す";
+"Hide when mouse is over the status window" = "マウスカーソルがウインドウの上にある時に隠す";
+"Hide when following applications are active:" = "次のアプリケーションが前面にある時に隠す:";
+"Application Name" = "アプリケーション名";
+"Add..." = "追加...";
+"Remove" = "削除";
+
+"Network" = "ネットワーク";
+"Show network monitor" = "ネットワークモニタを表示";
+"Interval" = "測定間隔";
+"sec" = "sec";
+"Scale" = "縮尺";
+"bytes/sec" = "bytes/sec";
+"Incoming" = "受信";
+"Outgoing" = "送信";
+
+"Show CPU monitor" = "CPU モニタを表示";
+"User" = "User";
+"System" = "System";
+"Nice" = "Nice";
+
+"Apply Now" = "今すぐ適用";
+"Revert" = "元に戻す";

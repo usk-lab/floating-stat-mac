@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AutoHide</key>
+	<true/>
+	<key>AutoHideApplications</key>
+	<array/>
+	<key>BackgroundFillColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmAAAAgz5MzM2G
+	</data>
+	<key>CPUInterval</key>
+	<integer>2</integer>
+	<key>CPUNiceFillColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmgz4D8xGDPyb03YM+DI6Xgz8zMzOG
+	</data>
+	<key>CPUSystemFillColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmAYM+UPuIgz5KUpSDPzMzM4Y=
+	</data>
+	<key>CPUUserFillColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmgz5KUpSDPkpSlAGDPzMzM4Y=
+	</data>
+	<key>NetIncomingFillColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmgz4SB/6DPzjGMoM+Egf+gz8zMzOG
+	</data>
+	<key>NetInterval</key>
+	<integer>1</integer>
+	<key>NetOutgoingFillColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmgz5KUpSDPkpSlAGDPzMzM4Y=
+	</data>
+	<key>NetScale</key>
+	<integer>7</integer>
+	<key>ShowCPUGraph</key>
+	<true/>
+	<key>ShowIconOnMenuBar</key>
+	<true/>
+	<key>ShowNetGraph</key>
+	<true/>
+	<key>TextColor</key>
+	<data>
+	BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
+	ZmZmAQEBgz9MzM2G
+	</data>
+	<key>WindowPosition</key>
+	<integer>3</integer>
+</dict>
+</plist>

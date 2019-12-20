@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                addAutoHideApp = id; 
+                applyPrefChanges = id; 
+                removeAutoHideApp = id; 
+                revertPrefChanges = id; 
+                showAboutPanel = id; 
+                showPrefWindow = id; 
+            }; 
+            CLASS = FSController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                appTable = NSTableView; 
+                defaultController = NSUserDefaultsController; 
+                prefWindow = NSWindow; 
+                statWindow = FloatingWindow; 
+                statusMenu = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {orderFrontWithFade = id; orderOutWithFade = id; }; 
+            CLASS = FloatingWindow; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

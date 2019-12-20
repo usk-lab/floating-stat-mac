@@ -1,0 +1,21 @@
+#!/bin/sh
+
+base_lang="English"
+target_langs="Japanese"
+target_nibs="MainMenu"
+
+cd `dirname $0`
+
+for lang in $target_langs; do
+  for nib in $target_nibs; do
+    base_nib=${base_lang}.lproj/${nib}.nib
+    target_nib=${lang}.lproj/${nib}.nib
+    target_lstr=${lang}.lproj/${nib}.strings
+    if [ \( $base_nib -nt $target_nib \) -o \
+         \( $target_lstr -nt $target_nib \) ]; then
+      nibtool -8 -d $target_lstr -W $target_nib $base_nib && \
+          touch $target_nib
+    fi
+  done
+done
+

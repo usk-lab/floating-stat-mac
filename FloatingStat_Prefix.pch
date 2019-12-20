@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FloatStat' target in the 'FloatStat' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
