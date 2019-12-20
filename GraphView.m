@@ -50,7 +50,7 @@
 
     [[def unarchivedObjectForKey:@"BackgroundFillColor"] set];
     NSRectFill(bounds);
-    [graphImage compositeToPoint:bounds.origin operation:NSCompositeSourceOver];
+    [graphImage compositeToPoint:bounds.origin operation:NSCompositingOperationSourceOver];
 }
 
 - (void)setTitle:(NSString *)title

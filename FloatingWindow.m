@@ -8,7 +8,7 @@
         defer:(BOOL)flag
 {
     [super initWithContentRect:contentRect
-        styleMask:NSBorderlessWindowMask //styleMask
+                     styleMask:NSWindowStyleMaskBorderless //styleMask
         backing:backingType
         defer:flag];
     return self;

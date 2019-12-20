@@ -87,7 +87,7 @@
         if ([dataArray count] > size.width)
 			[dataArray removeObjectAtIndex:size.width];
     }
-    dataSize = [dataArray count];
+    dataSize = (int)[dataArray count];
     
     [self clearGraph];
 

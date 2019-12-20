@@ -88,7 +88,7 @@ const float logMin = 1.0e-4;
     [task setStandardOutput:pipe];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_readFromNetstat:) name:NSFileHandleReadCompletionNotification object:[pipe fileHandleForReading]];
     [task setLaunchPath:@"/usr/sbin/netstat"];
-    [task setArguments:[NSArray arrayWithObjects:@"-w", [NSString stringWithFormat:@"%d", [def integerForKey:@"NetInterval"]], nil]];
+    [task setArguments:[NSArray arrayWithObjects:@"-w", [NSString stringWithFormat:@"%ld", (long)[def integerForKey:@"NetInterval"]], nil]];
     [task launch];
     [[pipe fileHandleForReading] readInBackgroundAndNotify];
 }
