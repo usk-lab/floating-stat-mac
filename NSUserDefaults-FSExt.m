@@ -12,7 +12,7 @@
 - unarchivedObjectForKey:key
 {
     NSValueTransformer *vt = [NSValueTransformer
-			valueTransformerForName:NSUnarchiveFromDataTransformerName];
+                              valueTransformerForName:NSSecureUnarchiveFromDataTransformerName];
     return [vt transformedValue:[self objectForKey:key]];
 }
 
