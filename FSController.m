@@ -50,8 +50,8 @@ NSRect _graphRect(int n)
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
     statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
     [statusItem retain];
-    [statusItem setImage:[NSImage imageNamed:@"StatusBarIcon"]];
-    [statusItem setHighlightMode:YES];
+    statusItem.button.image = [NSImage imageNamed:@"StatusBarIcon"];
+    statusItem.button.cell.highlighted = true;
     [statusItem setMenu:statusMenu];
 }
 
@@ -134,7 +134,7 @@ NSRect _graphRect(int n)
     windowRect.size.width = (graphSize + spacing) * nrView - spacing;
     windowRect.size.height = graphSize;
 
-    int winPos = [def integerForKey:@"WindowPosition"];
+    NSInteger winPos = [def integerForKey:@"WindowPosition"];
     if (winPos == 0 || winPos == 1) {   // top
         windowRect.origin.y = NSMaxY(screenRect) - windowRect.size.height;
     } else {    // bottom
