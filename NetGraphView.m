@@ -28,7 +28,8 @@ const float logMin = 1.0e-4;
 
     [graphImage lockFocus];
 
-    [[def unarchivedObjectForKey:@"NetIncomingFillColor"] set];
+    NSColor *incomingFillColor = [def unarchivedObjectForKey:@"NetIncomingFillColor"];
+    [incomingFillColor set];
     for (c = 0; c < [inBpsArray count]; c++) {
         v = [[inBpsArray objectAtIndex:c] floatValue];
 		//NSLog(@"2) v = %.2f", v);
@@ -38,7 +39,8 @@ const float logMin = 1.0e-4;
 				toPoint:NSMakePoint(px, size.height - log10(v + 1) / scale * size.height / 2)];
     }
 
-    [[def unarchivedObjectForKey:@"NetOutgoingFillColor"] set];
+    NSColor *outgoingFillColor = [def unarchivedObjectForKey:@"NetOutgoingFillColor"];
+    [outgoingFillColor set];
     for (c = 0; c < [inBpsArray count]; c++) {
         v = [[outBpsArray objectAtIndex:c] floatValue];
 		//NSLog(@"2) v = %.2f", v);

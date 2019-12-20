@@ -104,7 +104,9 @@
             [path moveToPoint:point];
             point.y += usage * size.height;
             [path lineToPoint:point];
-            [[def unarchivedObjectForKey:[dict objectForKey:@"FillColor"]] set];
+
+            NSColor *fillColor = [def unarchivedObjectForKey:[dict objectForKey:@"FillColor"]];
+            [fillColor set];
             [path stroke];
         }
     }
