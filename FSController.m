@@ -278,7 +278,7 @@ void _reopenApplication(ProcessSerialNumber psn)
     NSArray *filesToOpen;
     NSString *appName;
     
-    if (ret != NSOKButton) return;
+    if (ret != NSModalResponseOK) return;
 
     filesToOpen = [panel filenames];
     for (idx = 0; idx < [filesToOpen count]; idx++) {
@@ -309,11 +309,10 @@ void _reopenApplication(ProcessSerialNumber psn)
 - (void)_didEndRemoveAleartSheet:(NSWindow *)sheet
         returnCode:(int)ret contextInfo:ctx
 {
-    if (ret == NSAlertDefaultReturn) return;
+    
+    if (ret == NSAlertFirstButtonReturn) return;
 
-    int row;
-
-    row  = [appTable selectedRow];
+    NSInteger row = [appTable selectedRow];
     [autoHideAppArray removeObjectAtIndex:row];
     
     [[NSUserDefaults standardUserDefaults] setObject:autoHideAppArray forKey:@"AutoHideApplications"];
@@ -322,10 +321,9 @@ void _reopenApplication(ProcessSerialNumber psn)
 
 - (IBAction)removeAutoHideApp:sender
 {
-    int row;
     NSString *appPath, *appName;
     
-    row  = [appTable selectedRow];
+    NSInteger row = [appTable selectedRow];
     appPath = [[NSWorkspace sharedWorkspace] fullPathForApplication:[autoHideAppArray objectAtIndex:row]];
     appName = [[[NSFileManager defaultManager] componentsToDisplayForPath:appPath] lastObject];
 
@@ -347,7 +345,7 @@ void _reopenApplication(ProcessSerialNumber psn)
 
 - (int)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return [autoHideAppArray count];
+    return (int)[autoHideAppArray count];
 }
 
 - tableView:(NSTableView *)tableView
